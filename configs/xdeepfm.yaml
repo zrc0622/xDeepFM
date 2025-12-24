@@ -1,0 +1,35 @@
+# 数据参数
+data:
+  path: "data/train.txt"
+  test_size: 0.1
+  valid_size: 0.1
+  sample_rows: null   # 设置为 null 读取全量数据
+  seed: 2025
+  processed_dir: "data/processed_v4"
+
+# 训练参数
+train:
+  batch_size: 4096
+  epochs: 8
+  learning_rate: 0.001
+  device: "cuda"
+  optimizer: "adam"
+
+# 模型参数
+model:
+  name: "xDeepFM_baseline"
+  embedding_size: 10
+  
+  dnn_hidden_units: [400, 400]
+  dnn_dropout: 0.0
+  dnn_activation: "relu"
+
+  cin_layer_size: [200, 200, 200]
+  cin_split_half: True
+  cin_activation: "linear"
+
+  l2_reg_linear: 0.0001
+  l2_reg_embedding: 0.0001
+  l2_reg_dnn: 0.0001
+  l2_reg_cin: 0.0001
+  
