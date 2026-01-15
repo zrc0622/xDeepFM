@@ -52,7 +52,7 @@ pip install deepctr-torch, pyyaml, pandas, numpy==1.26.4, matplotlib, seaborn
 
 # 快速开始
 
-下载[`Criteo`](https://cloud.tsinghua.edu.cn/d/72a3745d59bc4c2d84ae/)广告数据集并解压至`data`文件夹下
+下载 [`Criteo`](https://cloud.tsinghua.edu.cn/d/72a3745d59bc4c2d84ae/) 广告数据集并解压至 `data` 文件夹下
 <!-- bigdatathu -->
 
 ## 数据探索
